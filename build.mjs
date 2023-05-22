@@ -1,5 +1,5 @@
 import { readFile, writeFile, readdir } from "fs/promises"; 
-import { extname } from "path"; 
+import { extname } from "path";  
 import { createHash } from "crypto";
 
 import { rollup } from "rollup";
