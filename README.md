@@ -1,4 +1,4 @@
-# My Vendetta Plugins
+# Some Vendetta Plugins (Some forks of deleted plugins)
 ## How to install?
 Paste a plugin URL into the Plugins page of Vendetta, following a basic format of:
 
