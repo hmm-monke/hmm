@@ -84,7 +84,7 @@ const unpatchAvatar = after("default", HeaderAvatar, ([{ user, style, guildId }]
 
       ? `https://cdn.discordapp.com/embed/avatars/${user.discriminator % 5}.png`
 
-      : image?.replace(".webp", ".png");
+      : image?.replace(".jpg", ".png");
 
   delete res.props.style;
 
@@ -114,7 +114,7 @@ const unpatchBanner = after("default", ProfileBanner, ([{ bannerSource }], res) 
 
     .replace(/(?:\?size=\d{3,4})?$/, "?size=4096")
 
-    .replace(".webp", ".png");
+    .replace(".jpg", ".png");
 
   return <Pressable onPress={({ nativeEvent }) => openModal(url, nativeEvent)}>{res}</Pressable>;
 
